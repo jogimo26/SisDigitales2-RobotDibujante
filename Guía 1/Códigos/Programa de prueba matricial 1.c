@@ -1,3 +1,15 @@
+// Pines de las filas del teclado
+#define ROW1 13
+#define ROW2 12
+#define ROW3 14
+#define ROW4 27
+
+// Pines de las columnas del teclado
+#define COL1 26
+#define COL2 25
+#define COL3 33
+#define COL4 32
+
 void loop() {
 //Read Keypad
 char tecla = 0;
