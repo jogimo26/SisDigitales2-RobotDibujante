@@ -1,5 +1,4 @@
 //Código completo para el micro1 (robot)
-// Proyecto en Wokwi: https://wokwi.com/projects/480857814500482049
 #include <Arduino.h>
 #include <string.h>
 #include <ESP32Servo.h>
@@ -263,7 +262,7 @@ void ejecutarComando() {
 
       Serial.println("Pluma abajo");
 
-      Serial2.print("OK#");
+      Serial.print("OK#");
       return;
 
     case LEVANTAPLUMA:
@@ -274,7 +273,7 @@ void ejecutarComando() {
 
       Serial.println("Pluma arriba");
 
-      Serial2.print("OK#");
+      Serial.print("OK#");
       return;
 
     default:
@@ -288,6 +287,8 @@ void ejecutarComando() {
 
   Serial.print("Duracion (ms): ");
   Serial.println(duracion);
+
+  Serial.println("OK#");
 
   iniciarTimer(duracion);
 }
